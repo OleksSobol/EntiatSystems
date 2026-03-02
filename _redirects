@@ -1,1 +1,2 @@
-https://www.auto.osobol.com/* https://auto.osobol.com/:splat 301!
+# www redirect is handled via Cloudflare DNS dashboard (Bulk Redirect or Page Rule)
+# Add a Cloudflare Bulk Redirect: www.auto.osobol.com -> https://auto.osobol.com
