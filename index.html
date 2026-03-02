@@ -4,64 +4,164 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Entiat Systems — IT for East of the Mountains</title>
-  <meta name="description" content="Entiat Systems provides software development, IT system administration, and tech stack management for businesses and non-profits east of the Cascades.">
+  <meta name="description" content="Modern software, secure systems, and smart tech stacks for growing organizations in regional and rural markets.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-  <header class="site-header">
-    <div class="header-images">
-      <img
-        src="assets/images/orchard-mountain.jpg"
-        alt="Apple orchard with mountain in background"
-        class="header-img header-img--left"
-        width="260"
-      >
-      <img
-        src="assets/images/yakima-apples-label.jpg"
-        alt="Blue Ribbon Brand Yakima Apples label"
-        class="header-img header-img--right"
-        width="180"
-      >
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="/" class="nav__logo">Entiat Systems</a>
+      <ul class="nav__links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact" class="nav__cta">Get in touch</a></li>
+      </ul>
     </div>
+  </nav>
 
-    <div class="header-title">
-      <h1>Entiat Systems</h1>
-      <p class="tagline">IT for East of the Mountains</p>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__bg-mesh" aria-hidden="true"></div>
+    <div class="container">
+      <div class="hero__content">
+        <span class="hero__eyebrow">Entiat Systems</span>
+        <h1 class="hero__headline">
+          IT for East of<br>the Mountains
+        </h1>
+        <p class="hero__sub">
+          Modern software, secure systems, and smart tech stacks<br class="br-desktop">
+          for growing organizations.
+        </p>
+        <div class="hero__actions">
+          <a href="#contact" class="btn btn--primary">Book a Consultation</a>
+          <a href="#services" class="btn btn--ghost">See Services</a>
+        </div>
+      </div>
     </div>
-  </header>
+    <div class="hero__fade" aria-hidden="true"></div>
+  </section>
 
-  <main>
-    <div class="services-grid">
-
-      <div class="service-card">
-        <h2>Software Development</h2>
-        <p>Putting mobile apps, AI agents and more to work for businesses and non-profits.</p>
-        <a href="#contact" class="learn-more">Learn More</a>
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">What we do</p>
+        <h2 class="section-title">Built for how you actually work</h2>
       </div>
 
-      <div class="service-card">
-        <h2>IT System Administration</h2>
-        <p>Taking care of your system admin, data integrity, network security, and cloud infrastructure.</p>
-        <a href="#contact" class="learn-more">Learn More</a>
-      </div>
+      <div class="services__grid">
 
-      <div class="service-card">
-        <h2>Tech Stack Management</h2>
-        <p>Working with you to select the most effective software apps to cover your entire workflow.</p>
-        <a href="#contact" class="learn-more">Learn More</a>
-      </div>
+        <div class="card">
+          <div class="card__icon">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="3" width="16" height="12" rx="2"/>
+              <path d="M7 7l2 2-2 2M11 11h2"/>
+            </svg>
+          </div>
+          <h3 class="card__title">Software Development</h3>
+          <p class="card__body">Putting mobile apps, AI agents, and custom tools to work for businesses and non-profits.</p>
+          <a href="#contact" class="card__link">Learn More <span aria-hidden="true">→</span></a>
+        </div>
 
+        <div class="card">
+          <div class="card__icon">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="10" cy="10" r="7"/>
+              <path d="M10 6v4l2.5 2.5"/>
+              <path d="M3.5 10h1M15.5 10h1M10 3.5v1M10 15.5v1"/>
+            </svg>
+          </div>
+          <h3 class="card__title">IT System Administration</h3>
+          <p class="card__body">Taking care of your system admin, data integrity, network security, and cloud infrastructure.</p>
+          <a href="#contact" class="card__link">Learn More <span aria-hidden="true">→</span></a>
+        </div>
+
+        <div class="card">
+          <div class="card__icon">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="5" height="5" rx="1"/>
+              <rect x="12" y="3" width="5" height="5" rx="1"/>
+              <rect x="3" y="12" width="5" height="5" rx="1"/>
+              <path d="M14.5 12v5M12 14.5h5"/>
+            </svg>
+          </div>
+          <h3 class="card__title">Tech Stack Management</h3>
+          <p class="card__body">Working with you to select the most effective software to cover your entire workflow.</p>
+          <a href="#contact" class="card__link">Learn More <span aria-hidden="true">→</span></a>
+        </div>
+
+      </div>
     </div>
-  </main>
+  </section>
 
-  <footer id="contact">
-    <p class="footer-note">
-      Entiat is a town up the Columbia. The name is distinctive — and so is our approach to IT.
-    </p>
-    <p class="footer-contact">
-      <a href="mailto:info@entiat.systems">info@entiat.systems</a>
-    </p>
+  <!-- POSITIONING -->
+  <section class="positioning" id="about">
+    <div class="container">
+      <div class="positioning__inner">
+        <div class="positioning__text">
+          <p class="section-label">Our mission</p>
+          <h2 class="positioning__headline">
+            Regional organizations deserve the same technical edge as major cities.
+          </h2>
+          <p class="positioning__body">
+            We're based east of the Cascades and we understand the specific challenges of building and running technology in regional markets — from unreliable connectivity to lean teams wearing many hats. Entiat Systems brings enterprise-grade thinking to organizations that need it most.
+          </p>
+        </div>
+        <div class="positioning__stat-block">
+          <div class="stat">
+            <span class="stat__number">10+</span>
+            <span class="stat__label">Years building systems</span>
+          </div>
+          <div class="stat">
+            <span class="stat__number">3</span>
+            <span class="stat__label">Core service disciplines</span>
+          </div>
+          <div class="stat">
+            <span class="stat__number">100%</span>
+            <span class="stat__label">Focused on your region</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section" id="contact">
+    <div class="container">
+      <div class="cta-block">
+        <div class="cta-block__bg" aria-hidden="true"></div>
+        <div class="cta-block__content">
+          <h2 class="cta-block__headline">Let's build the right system.</h2>
+          <p class="cta-block__sub">Tell us what you're working on — we'll help you figure out the right next step.</p>
+          <a href="mailto:info@entiatsystems.com" class="btn btn--primary btn--lg">Start a Conversation</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <span class="footer__logo">Entiat Systems</span>
+          <p class="footer__tagline">IT for East of the Mountains</p>
+        </div>
+        <nav class="footer__nav" aria-label="Footer navigation">
+          <a href="#services">Services</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2026 Entiat Systems. All rights reserved.</p>
+      </div>
+    </div>
   </footer>
 
 </body>
