@@ -7,7 +7,7 @@
   <meta name="description" content="Yakima-based software development, IT administration, and tech stack management for businesses and non-profits in the Pacific Northwest.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300;1,8..60,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;1,8..60,300;1,8..60,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -27,116 +27,118 @@
     </div>
   </nav>
 
-  <!-- HERO -->
+  <!-- ═══════════════════════════════════════
+       HERO
+  ══════════════════════════════════════════ -->
   <section class="hero">
 
-    <!-- SVG mountain horizon — Yakima valley silhouette -->
+    <!-- Keep only mountain silhouette — orchard moves to narrative section -->
     <div class="hero__landscape" aria-hidden="true">
-      <svg viewBox="0 0 1440 320" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-        <!-- Distant range (lightest) -->
-        <path d="M0 280 L80 220 L160 240 L280 180 L400 200 L520 160 L600 175 L680 145 L760 165 L860 130 L940 150 L1040 120 L1120 140 L1200 110 L1300 130 L1380 115 L1440 125 L1440 320 L0 320 Z" fill="rgba(180,196,214,0.18)"/>
-        <!-- Mid range -->
-        <path d="M0 300 L100 260 L200 270 L320 230 L440 245 L540 210 L620 225 L700 195 L800 215 L900 185 L980 200 L1080 170 L1160 188 L1260 160 L1360 175 L1440 165 L1440 320 L0 320 Z" fill="rgba(140,163,188,0.14)"/>
-        <!-- Near ridge (strongest) — Mt Adams / Cascades echo -->
-        <path d="M0 320 L0 295 L120 275 L240 285 L360 255 L460 268 L560 240 L640 252 L720 228 L820 245 L920 220 L1020 238 L1120 215 L1220 230 L1340 210 L1440 220 L1440 320 Z" fill="rgba(100,130,165,0.11)"/>
+      <svg viewBox="0 0 1440 260" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 260 L0 220 L80 208 L180 215 L300 185 L420 198 L520 170 L600 182 L680 155 L760 172 L860 142 L940 158 L1040 128 L1120 145 L1200 118 L1300 136 L1380 120 L1440 128 L1440 260 Z" fill="rgba(160,185,210,0.13)"/>
+        <path d="M0 260 L0 235 L140 218 L260 228 L380 200 L480 212 L580 188 L660 200 L740 178 L840 194 L940 170 L1040 185 L1140 162 L1240 176 L1360 158 L1440 165 L1440 260 Z" fill="rgba(120,155,190,0.10)"/>
       </svg>
     </div>
 
     <div class="container">
       <div class="hero__content">
         <span class="hero__location">
-          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="5" r="2"/><path d="M6 1C3.79 1 2 2.79 2 5c0 3 4 7 4 7s4-4 4-7c0-2.21-1.79-4-4-4z"/></svg>
+          <svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="5" r="2"/><path d="M6 1C3.79 1 2 2.79 2 5c0 3 4 7 4 7s4-4 4-7c0-2.21-1.79-4-4-4z"/></svg>
           Yakima, WA
         </span>
+
         <h1 class="hero__headline">
           IT for East of<br>the Mountains.
         </h1>
+
         <p class="hero__sub">
-          We build software, secure systems, and manage the technology<br class="br-desktop"> that keeps Yakima Valley organizations running.
+          We build the software, security, and infrastructure<br class="br-desktop">
+          that keeps Yakima Valley organizations running.
         </p>
+
         <div class="hero__actions">
           <a href="#contact" class="btn btn--primary">Book a Consultation</a>
           <a href="#services" class="btn btn--ghost">See what we do</a>
         </div>
+
+        <!-- Terminal chip — one modern anchor -->
+        <div class="hero__terminal" aria-hidden="true">
+          <span class="terminal__prompt">$</span>
+          <span class="terminal__text" id="terminal-text"></span>
+          <span class="terminal__cursor">▌</span>
+        </div>
       </div>
     </div>
 
-    <!-- Orchard row decoration -->
-    <div class="hero__orchard" aria-hidden="true">
-      <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-        <!-- Tree row silhouette — apple orchard style -->
-        <g fill="rgba(60,90,60,0.07)">
-          <!-- Repeating tree shapes -->
-          <ellipse cx="40"  cy="55" rx="28" ry="32"/>
-          <rect x="36" y="72" width="8" height="8"/>
-          <ellipse cx="120" cy="50" rx="26" ry="30"/>
-          <rect x="116" y="68" width="8" height="10"/>
-          <ellipse cx="200" cy="55" rx="30" ry="34"/>
-          <rect x="196" y="73" width="8" height="7"/>
-          <ellipse cx="280" cy="48" rx="25" ry="29"/>
-          <rect x="276" y="66" width="8" height="12"/>
-          <ellipse cx="360" cy="54" rx="28" ry="32"/>
-          <rect x="356" y="72" width="8" height="8"/>
-          <ellipse cx="440" cy="50" rx="27" ry="30"/>
-          <rect x="436" y="68" width="8" height="10"/>
-          <ellipse cx="520" cy="56" rx="29" ry="33"/>
-          <rect x="516" y="74" width="8" height="6"/>
-          <ellipse cx="600" cy="49" rx="26" ry="30"/>
-          <rect x="596" y="67" width="8" height="11"/>
-          <ellipse cx="680" cy="54" rx="28" ry="32"/>
-          <rect x="676" y="72" width="8" height="8"/>
-          <ellipse cx="760" cy="50" rx="25" ry="29"/>
-          <rect x="756" y="68" width="8" height="10"/>
-          <ellipse cx="840" cy="55" rx="30" ry="33"/>
-          <rect x="836" y="73" width="8" height="7"/>
-          <ellipse cx="920" cy="48" rx="26" ry="30"/>
-          <rect x="916" y="66" width="8" height="12"/>
-          <ellipse cx="1000" cy="53" rx="28" ry="31"/>
-          <rect x="996" y="71" width="8" height="9"/>
-          <ellipse cx="1080" cy="50" rx="27" ry="30"/>
-          <rect x="1076" y="68" width="8" height="10"/>
-          <ellipse cx="1160" cy="55" rx="29" ry="33"/>
-          <rect x="1156" y="73" width="8" height="7"/>
-          <ellipse cx="1240" cy="48" rx="25" ry="29"/>
-          <rect x="1236" y="66" width="8" height="12"/>
-          <ellipse cx="1320" cy="54" rx="28" ry="32"/>
-          <rect x="1316" y="72" width="8" height="8"/>
-          <ellipse cx="1400" cy="50" rx="27" ry="30"/>
-          <rect x="1396" y="68" width="8" height="10"/>
-        </g>
-      </svg>
-    </div>
-
+    <div class="hero__fade" aria-hidden="true"></div>
   </section>
 
-  <!-- SERVICES -->
+  <!-- ═══════════════════════════════════════
+       BRUTAL STATEMENT — dark, no ornament
+  ══════════════════════════════════════════ -->
+  <section class="statement">
+    <div class="container">
+      <div class="statement__inner">
+        <div class="statement__left">
+          <span class="statement__label">GROUND TRUTH</span>
+          <h2 class="statement__headline">
+            Most regional IT<br>is reactive.
+          </h2>
+        </div>
+        <div class="statement__right">
+          <p class="statement__line">We build systems that don't break in harvest season.</p>
+          <p class="statement__line">We don't outsource your infrastructure to three time&nbsp;zones&nbsp;away.</p>
+          <p class="statement__line">We answer the phone. We show up.</p>
+          <div class="statement__divider" aria-hidden="true"></div>
+          <p class="statement__sub">Downtime costs more in October than April. Your systems should know that.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       SERVICES — offset grid, not symmetrical
+  ══════════════════════════════════════════ -->
   <section class="services" id="services">
     <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">What we build</h2>
-        <p class="section-sub">Three disciplines. One team. Built for how regional organizations actually operate.</p>
+      <div class="services__header">
+        <span class="micro-label">WHAT WE BUILD</span>
+        <h2 class="section-title">Three disciplines.<br>One team.</h2>
       </div>
 
       <div class="services__grid">
 
-        <div class="card">
-          <div class="card__number">01</div>
-          <h3 class="card__title">Software Development</h3>
-          <p class="card__body">Mobile apps, AI agents, and custom automation tools — built for the workflows your team actually uses. Not generic. Not over-engineered.</p>
+        <!-- Card 01 — full width top -->
+        <div class="card card--wide">
+          <div class="card__meta">
+            <span class="card__number">01</span>
+            <span class="micro-label">SOFTWARE</span>
+          </div>
+          <div class="card__content">
+            <h3 class="card__title">Software Development</h3>
+            <p class="card__body">Mobile apps, AI agents, and custom automation tools — built for the workflows your team actually uses. Not generic. Not over-engineered. Shipped and maintained by the same person you called to spec it.</p>
+          </div>
           <a href="#contact" class="card__link">Start a project <span aria-hidden="true">→</span></a>
         </div>
 
-        <div class="card card--mid">
-          <div class="card__number">02</div>
+        <!-- Cards 02 + 03 side by side -->
+        <div class="card">
+          <div class="card__meta">
+            <span class="card__number">02</span>
+            <span class="micro-label">INFRASTRUCTURE</span>
+          </div>
           <h3 class="card__title">IT System Administration</h3>
-          <p class="card__body">System admin, data integrity, network security, and cloud infrastructure — managed by someone who answers the phone when something breaks.</p>
+          <p class="card__body">System admin, data integrity, network security, and cloud infrastructure — managed by someone who answers when something breaks at 6&nbsp;AM before a shift.</p>
           <a href="#contact" class="card__link">Get covered <span aria-hidden="true">→</span></a>
         </div>
 
         <div class="card">
-          <div class="card__number">03</div>
+          <div class="card__meta">
+            <span class="card__number">03</span>
+            <span class="micro-label">STACK</span>
+          </div>
           <h3 class="card__title">Tech Stack Management</h3>
-          <p class="card__body">We help you choose, connect, and actually use the right software — so your team spends less time fighting tools and more time doing the work.</p>
+          <p class="card__body">We help you choose, connect, and actually use the right software — so your team stops fighting tools and starts using them.</p>
           <a href="#contact" class="card__link">Simplify your stack <span aria-hidden="true">→</span></a>
         </div>
 
@@ -144,55 +146,50 @@
     </div>
   </section>
 
-  <!-- ABOUT / POSITIONING -->
-  <section class="about" id="about">
+  <!-- ═══════════════════════════════════════
+       SYSTEM DIAGRAM — engineered clarity
+  ══════════════════════════════════════════ -->
+  <section class="diagram">
     <div class="container">
-      <div class="about__inner">
+      <div class="diagram__inner">
 
-        <div class="about__text">
-          <span class="about__region-tag">Yakima Valley, WA</span>
-          <h2 class="about__headline">
-            We're from here.<br>We build for here.
-          </h2>
-          <p class="about__body">
-            Entiat is a small town up the Columbia — and that name means something to us. We're not a remote agency parachuting in. We're based in Yakima, we know this valley, and we've watched organizations here get underserved by technology vendors who don't understand what it's like to run a business east of the Cascades.
-          </p>
-          <p class="about__body">
-            Lean teams. Stretched budgets. Connectivity that isn't always reliable. You need systems that work — not systems that require a full-time IT staff to maintain. That's what we build.
-          </p>
+        <div class="diagram__label-block">
+          <span class="micro-label">SYSTEM ARCHITECTURE</span>
+          <h2 class="diagram__headline">How clarity<br>gets built.</h2>
+          <p class="diagram__sub">Every engagement follows a deliberate stack. No hand-waving. No black boxes.</p>
         </div>
 
-        <div class="about__aside">
-          <!-- Yakima fact card -->
-          <div class="fact-card">
-            <div class="fact-card__region">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2C5.24 2 3 4.24 3 7c0 4 5 9 5 9s5-5 5-9c0-2.76-2.24-5-5-5z"/><circle cx="8" cy="7" r="2"/></svg>
-              Yakima County, WA
-            </div>
-            <blockquote class="fact-card__quote">
-              "The valley produces over 70% of Washington's apple crop — and every orchard, co-op, and packing house runs on technology someone has to manage."
-            </blockquote>
-            <p class="fact-card__attribution">That's us.</p>
+        <div class="diagram__flow">
+          <div class="diagram__node diagram__node--top">
+            <span class="diagram__node-label">Your Organization</span>
           </div>
-
-          <!-- Services highlight -->
-          <div class="service-list">
-            <div class="service-list__item">
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><polyline points="2,7 5.5,10.5 12,3.5"/></svg>
-              Non-profit & small business focus
-            </div>
-            <div class="service-list__item">
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><polyline points="2,7 5.5,10.5 12,3.5"/></svg>
-              Regional & rural connectivity experience
-            </div>
-            <div class="service-list__item">
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><polyline points="2,7 5.5,10.5 12,3.5"/></svg>
-              Mobile apps, AI, and custom automation
-            </div>
-            <div class="service-list__item">
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><polyline points="2,7 5.5,10.5 12,3.5"/></svg>
-              You get a real person, not a ticket queue
-            </div>
+          <div class="diagram__connector" aria-hidden="true">
+            <svg width="2" height="32" viewBox="0 0 2 32"><line x1="1" y1="0" x2="1" y2="32" stroke="currentColor" stroke-width="1.5" stroke-dasharray="3 3"/></svg>
+          </div>
+          <div class="diagram__node">
+            <span class="diagram__node-tag">INFRASTRUCTURE</span>
+            <span class="diagram__node-label">Servers · Cloud · Connectivity</span>
+          </div>
+          <div class="diagram__connector" aria-hidden="true">
+            <svg width="2" height="32" viewBox="0 0 2 32"><line x1="1" y1="0" x2="1" y2="32" stroke="currentColor" stroke-width="1.5" stroke-dasharray="3 3"/></svg>
+          </div>
+          <div class="diagram__node">
+            <span class="diagram__node-tag">SECURITY</span>
+            <span class="diagram__node-label">Access · Integrity · Monitoring</span>
+          </div>
+          <div class="diagram__connector" aria-hidden="true">
+            <svg width="2" height="32" viewBox="0 0 2 32"><line x1="1" y1="0" x2="1" y2="32" stroke="currentColor" stroke-width="1.5" stroke-dasharray="3 3"/></svg>
+          </div>
+          <div class="diagram__node">
+            <span class="diagram__node-tag">AUTOMATION</span>
+            <span class="diagram__node-label">Apps · Agents · Workflows</span>
+          </div>
+          <div class="diagram__connector" aria-hidden="true">
+            <svg width="2" height="32" viewBox="0 0 2 32"><line x1="1" y1="0" x2="1" y2="32" stroke="currentColor" stroke-width="1.5" stroke-dasharray="3 3"/></svg>
+          </div>
+          <div class="diagram__node diagram__node--result">
+            <span class="diagram__node-tag">OUTCOME</span>
+            <span class="diagram__node-label">Clarity</span>
           </div>
         </div>
 
@@ -200,14 +197,80 @@
     </div>
   </section>
 
-  <!-- CTA -->
+  <!-- ═══════════════════════════════════════
+       SEASONALITY — orchard motif made operational
+  ══════════════════════════════════════════ -->
+  <section class="seasonal" id="about">
+    <div class="container">
+      <div class="seasonal__inner">
+
+        <div class="seasonal__text">
+          <span class="micro-label">YAKIMA VALLEY, WA</span>
+          <h2 class="seasonal__headline">
+            Harvest season<br>stresses everything.
+          </h2>
+          <p class="seasonal__body">
+            Payroll spikes. Logistics multiply. Packing houses run 20-hour days. Cold storage systems can't go down. Connectivity failures cost more in October than they do in April.
+          </p>
+          <p class="seasonal__body">
+            We're from here. We build for the rhythm of this valley — not for a generic SMB somewhere with reliable fiber and an IT department.
+          </p>
+        </div>
+
+        <!-- Seasonal stress timeline -->
+        <div class="seasonal__timeline">
+          <div class="timeline__row">
+            <span class="timeline__month">APR</span>
+            <div class="timeline__bar-track">
+              <div class="timeline__bar" style="--fill: 20%" aria-label="Low stress"></div>
+            </div>
+            <span class="timeline__note">Pruning · Low load</span>
+          </div>
+          <div class="timeline__row">
+            <span class="timeline__month">JUN</span>
+            <div class="timeline__bar-track">
+              <div class="timeline__bar" style="--fill: 35%"></div>
+            </div>
+            <span class="timeline__note">Early cherry · Moderate</span>
+          </div>
+          <div class="timeline__row">
+            <span class="timeline__month">AUG</span>
+            <div class="timeline__bar-track">
+              <div class="timeline__bar timeline__bar--warn" style="--fill: 68%"></div>
+            </div>
+            <span class="timeline__note">Peach harvest · High</span>
+          </div>
+          <div class="timeline__row">
+            <span class="timeline__month">OCT</span>
+            <div class="timeline__bar-track">
+              <div class="timeline__bar timeline__bar--critical" style="--fill: 100%"></div>
+            </div>
+            <span class="timeline__note">Apple harvest · Peak load</span>
+          </div>
+          <div class="timeline__row">
+            <span class="timeline__month">DEC</span>
+            <div class="timeline__bar-track">
+              <div class="timeline__bar" style="--fill: 28%"></div>
+            </div>
+            <span class="timeline__note">Storage · Settling</span>
+          </div>
+          <p class="timeline__caption">System load profile · Yakima County agricultural cycle</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       CTA
+  ══════════════════════════════════════════ -->
   <section class="cta-section" id="contact">
     <div class="container">
       <div class="cta-block">
         <p class="cta-block__eyebrow">Based in Yakima · Serving the Pacific Northwest</p>
-        <h2 class="cta-block__headline">Let's build the right system.</h2>
+        <h2 class="cta-block__headline">Let's build the<br>right system.</h2>
         <p class="cta-block__sub">Tell us what you're working with — the problem, the team size, the budget reality. We'll be straight with you about what makes sense.</p>
-        <a href="mailto:info@entiatsystems.com" class="btn btn--primary btn--lg">Start a Conversation</a>
+        <a href="mailto:info@entiatsystems.com" class="btn btn--white btn--lg">Start a Conversation</a>
       </div>
     </div>
   </section>
@@ -232,6 +295,34 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    // Terminal typewriter — single modern element
+    (function() {
+      const phrases = [
+        'deploying clarity...',
+        'patching harvest_db.sql',
+        'uptime: 99.97%',
+        'backup verified ✓',
+        'system healthy',
+      ];
+      const el = document.getElementById('terminal-text');
+      if (!el) return;
+      let pi = 0, ci = 0, deleting = false;
+      function tick() {
+        const phrase = phrases[pi];
+        if (!deleting) {
+          el.textContent = phrase.slice(0, ++ci);
+          if (ci === phrase.length) { deleting = true; setTimeout(tick, 2200); return; }
+        } else {
+          el.textContent = phrase.slice(0, --ci);
+          if (ci === 0) { deleting = false; pi = (pi + 1) % phrases.length; setTimeout(tick, 400); return; }
+        }
+        setTimeout(tick, deleting ? 38 : 72);
+      }
+      setTimeout(tick, 1000);
+    })();
+  </script>
 
 </body>
 </html>
