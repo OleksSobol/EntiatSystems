@@ -1,2 +1,2 @@
-# www redirect is handled via Cloudflare DNS dashboard (Bulk Redirect or Page Rule)
-# Add a Cloudflare Bulk Redirect: www.auto.osobol.com -> https://auto.osobol.com
+# www redirect handled via Cloudflare DNS/Bulk Redirect:
+# www.entiat.osobol.com -> https://entiat.osobol.com
